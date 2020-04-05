@@ -1,10 +1,9 @@
 from pyspark import SparkContext
 from pyspark.ml.feature import StringIndexer, VectorAssembler, OneHotEncoder
-from pyspark.ml.tuning import ParamGridBuilder, CrossValidator
+from pyspark.ml.tuning import ParamGridBuilder
 from pyspark.sql import SparkSession
 from pyspark.ml.classification import RandomForestClassifier, NaiveBayes
-from pyspark.ml.evaluation import BinaryClassificationEvaluator
-from pyspark.sql.functions import mean, max, regexp_replace
+from pyspark.sql.functions import max, regexp_replace
 from pyspark.ml import Pipeline
 from Predictor import predictor
 
